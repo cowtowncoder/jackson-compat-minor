@@ -29,7 +29,16 @@ Jackson components
       -->
     <version.annotations>2.9.0.pr3</version.annotations>
     <version.core>2.9.0.pr3</version.core>
+
+    <!-- 02-May-2017, tatu: Versions 2.8.x and 2.7.x work; 2.6.x not (bridge too far)
+      -->
     <version.dataformats>2.8.8</version.dataformats>
+<!--
+    <version.dataformats>2.7.9</version.dataformats>
+-->
+
+    <version.datatypes>${version.dataformats}</version.datatypes>
+
   </properties>
 
   <dependencies>
@@ -74,6 +83,11 @@ Jackson components
     </dependency>
     <dependency>
       <groupId>com.fasterxml.jackson.dataformat</groupId>
+      <artifactId>jackson-dataformat-protobuf</artifactId>
+      <version>${version.dataformats}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.fasterxml.jackson.dataformat</groupId>
       <artifactId>jackson-dataformat-smile</artifactId>
       <version>${version.dataformats}</version>
     </dependency>
@@ -86,6 +100,18 @@ Jackson components
       <groupId>com.fasterxml.jackson.dataformat</groupId>
       <artifactId>jackson-dataformat-yaml</artifactId>
       <version>${version.dataformats}</version>
+    </dependency>
+
+    <!-- Also small set of choice datatypes -->
+    <dependency>
+      <groupId>com.fasterxml.jackson.datatype</groupId>
+      <artifactId>jackson-datatype-guava</artifactId>
+      <version>${version.datatypes}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.fasterxml.jackson.datatype</groupId>
+      <artifactId>jackson-datatype-joda</artifactId>
+      <version>${version.datatypes}</version>
     </dependency>
 
     <!-- 23-Feb-2016, tatu: Looks like we better use Woodstox as Stax impl, too -->

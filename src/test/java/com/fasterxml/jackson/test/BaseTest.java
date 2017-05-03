@@ -7,6 +7,8 @@ import junit.framework.TestCase;
 
 import com.fasterxml.jackson.core.*;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.datatype.guava.GuavaModule;
+import com.fasterxml.jackson.datatype.joda.JodaModule;
 
 public abstract class BaseTest
     extends TestCase
@@ -389,7 +391,10 @@ public abstract class BaseTest
     }
 
     protected ObjectMapper newMapper(JsonFactory f) {
-        return new ObjectMapper(f);
+        return new ObjectMapper(f)
+                .registerModule(new GuavaModule())
+                .registerModule(new JodaModule())
+                ;
     }
 
     /*
