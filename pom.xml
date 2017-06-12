@@ -28,7 +28,7 @@ Jackson components
     <!-- Basic idea: new(er) version of core components, older of dataformats
       -->
     <version.annotations>2.8.0</version.annotations>
-    <version.core>2.8.8</version.core>
+    <version.core>2.8.9</version.core>
 
     <!-- 02-May-2017, tatu: Version 2.7.x works;
                2.6.x fails for Smile, XML and YAML
