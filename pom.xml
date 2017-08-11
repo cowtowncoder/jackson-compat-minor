@@ -33,12 +33,14 @@ Jackson components
     <!-- 02-May-2017, tatu: Versions 2.8.x and 2.7.x work;
               2.6.x fails for Smile, XML and YAML
       -->
-    <version.dataformats>2.7.9</version.dataformats>
-
 <!--
-    <version.dataformats>2.8.9</version.dataformats>
-    <version.dataformats>2.6.6</version.dataformats>
+    <version.dataformats>2.7.9</version.dataformats>
 -->
+
+    <version.dataformats>2.8.9</version.dataformats>
+
+    <version.guava>${version.core}</version.guava>
+    <version.guava>2.9.1-SNAPSHOT</version.guava>
 
     <version.datatypes>${version.dataformats}</version.datatypes>
 
@@ -109,7 +111,7 @@ Jackson components
     <dependency>
       <groupId>com.fasterxml.jackson.datatype</groupId>
       <artifactId>jackson-datatype-guava</artifactId>
-      <version>${version.datatypes}</version>
+      <version>${version.guava}</version>
     </dependency>
     <dependency>
       <groupId>com.fasterxml.jackson.datatype</groupId>
