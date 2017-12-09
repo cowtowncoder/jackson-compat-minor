@@ -28,7 +28,7 @@ Jackson components
     <!-- Basic idea: new(er) version of core components, older of dataformats
       -->
     <version.annotations>2.9.1</version.annotations>
-    <version.core>2.9.2</version.core>
+    <version.core>2.9.3</version.core>
 
     <!-- 02-May-2017, tatu: Versions 2.8.x and 2.7.x work;
               2.6.x fails for Smile, XML and YAML
@@ -37,7 +37,7 @@ Jackson components
     <version.dataformats>2.7.9</version.dataformats>
     <version.dataformats>2.8.10</version.dataformats>
 -->
-    <version.dataformats>2.9.2</version.dataformats>
+    <version.dataformats>2.9.3</version.dataformats>
 
     <version.guava>${version.dataformats}</version.guava>
 
