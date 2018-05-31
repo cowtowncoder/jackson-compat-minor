@@ -285,30 +285,39 @@ public abstract class BaseTest
      */
 
     protected JsonParser createParserUsingReader(String input)
-        throws IOException, JsonParseException
+        throws IOException
     {
         return createParserUsingReader(new JsonFactory(), input);
     }
 
     protected JsonParser createParserUsingReader(JsonFactory f, String input)
-        throws IOException, JsonParseException
+        throws IOException
     {
         return f.createParser(new StringReader(input));
     }
 
     protected JsonParser createParserUsingStream(String input, String encoding)
-        throws IOException, JsonParseException
+        throws IOException
     {
         return createParserUsingStream(new JsonFactory(), input, encoding);
     }
 
     protected JsonParser createParserUsingStream(JsonFactory f,
-            String input, String encoding)
-        throws IOException, JsonParseException
+            String input, String encoding) throws IOException
     {
         byte[] data = input.getBytes(encoding);
         InputStream is = new ByteArrayInputStream(data);
         return f.createParser(is);
+    }
+
+    /*
+    /**********************************************************
+    /* Mapper construction
+    /**********************************************************
+     */
+    
+    protected static ObjectMapper newObjectMapper() {
+        return new ObjectMapper();
     }
 
     /*
