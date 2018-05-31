@@ -183,5 +183,34 @@ Jackson components
       <version>3.4.6</version>
     </dependency>
 
+    <!--  Vuln: Oracle JDBC Connector -->
+    <dependency>
+      <groupId>oracle</groupId>
+      <artifactId>ojdbc6</artifactId>
+      <version>11.2.0.3</version>
+    </dependency>
+    <dependency>
+      <groupId>javax</groupId>
+      <artifactId>javaee-api</artifactId>
+	 <version>7.0</version>
+    </dependency>
+
   </dependencies>
+
+  <!-- Stupid Oracle with their Stupid Control Freak Issues -->
+  <repositories>
+   <repository>
+    <id>maven.oracle.com</id>
+    <name>oracle-maven-repo</name>
+    <url>http://www.datanucleus.org/downloads/maven2/</url>
+    <!-- 
+    <url>https://maven.oracle.com</url>
+    -->
+    <layout>default</layout>
+    <releases>
+      <enabled>true</enabled>
+      <updatePolicy>always</updatePolicy>
+    </releases>
+   </repository>
+  </repositories>
 </project>
