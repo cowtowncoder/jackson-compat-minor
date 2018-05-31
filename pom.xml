@@ -28,7 +28,8 @@ Jackson components
     <!-- Basic idea: new(er) version of core components, older of dataformats
       -->
     <version.annotations>2.9.0</version.annotations>
-    <version.core>2.9.5</version.core>
+    <version.core>2.9.6-SNAPSHOT</version.core>
+    <version.databind>${version.core}</version.databind>
 
     <!-- 02-May-2017, tatu: Versions 2.8.x and 2.7.x work;
               2.6.x fails for Smile, XML and YAML
@@ -41,6 +42,7 @@ Jackson components
     <version.guava>${version.dataformats}</version.guava>
     <version.datatypes>${version.dataformats}</version.datatypes>
 
+     <version.spring>4.3.17.RELEASE</version.spring>
   </properties>
 
   <dependencies>
@@ -130,5 +132,55 @@ Jackson components
       <artifactId>junit</artifactId>
     </dependency>
 
+    <!--
+      -  30-May-2018, tatu: Vuln Testing needs more deps
+      -->
+
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+      <version>1.7.25</version>
+    </dependency>
+    <dependency>
+      <groupId>ch.qos.logback</groupId>
+      <artifactId>logback-classic</artifactId>
+      <version>1.2.3</version>
+    </dependency>
+
+    <!--  Vulns: Spring -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-core</artifactId>
+      <version>${version.spring}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-aop</artifactId>
+      <version>${version.spring}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-web</artifactId>
+      <version>${version.spring}</version>
+    </dependency>
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>javax.servlet-api</artifactId>
+      <version>3.1.0</version>
+    </dependency>
+
+    <!--  Vulns: C3P0 -->
+    <dependency>
+      <groupId>com.mchange</groupId>
+      <artifactId>c3p0</artifactId>
+      <version>0.9.5.2</version>
+    </dependency>
+
+    <!--  Vulns: iBatis/myBatis -->
+    <dependency>
+      <groupId>org.mybatis</groupId>
+      <artifactId>mybatis</artifactId>
+      <version>3.4.6</version>
+    </dependency>
   </dependencies>
 </project>

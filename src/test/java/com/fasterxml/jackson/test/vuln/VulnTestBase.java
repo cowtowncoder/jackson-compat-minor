@@ -4,7 +4,7 @@ import com.fasterxml.jackson.annotation.JsonTypeInfo;
 
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-
+import com.fasterxml.jackson.databind.exc.InvalidDefinitionException;
 import com.fasterxml.jackson.test.BaseTest;
 
 abstract class VulnTestBase extends BaseTest
@@ -44,11 +44,10 @@ abstract class VulnTestBase extends BaseTest
 
     protected void _verifySecurityException(Throwable t, String clsName) throws Exception
     {
-//       _verifyException(t, InvalidDefinitionException.class,
-        _verifyException(t, JsonMappingException.class,
-            "Illegal type",
-            "to deserialize",
-            "prevented for security reasons");
+        _verifyException(t, InvalidDefinitionException.class,
+                "Illegal type",
+                "to deserialize",
+                "prevented for security reasons");
         verifyException(t, clsName);
     }
 
