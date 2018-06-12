@@ -194,6 +194,13 @@ Jackson components
       <artifactId>javaee-api</artifactId>
       <version>7.0</version>
     </dependency>
+
+    <!--  Vuln: JODD framework, sql sid -->
+    <dependency>
+      <groupId>org.jodd</groupId>
+      <artifactId>jodd-db</artifactId>
+      <version>3.7.1</version>
+    </dependency>
   </dependencies>
 
   <!-- Stupid Oracle with their Stupid Control Freak Issues -->
