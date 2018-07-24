@@ -2,7 +2,7 @@ package com.fasterxml.jackson.test.vuln;
 
 import jodd.db.connection.DataSourceConnectionProvider;
 
-public class JoddVulnTest extends VulnTestBase
+public class JoddVulnCVE2018_12022Test extends VulnTestBase
 {
     public void testConnectionFactory() throws Exception
     {

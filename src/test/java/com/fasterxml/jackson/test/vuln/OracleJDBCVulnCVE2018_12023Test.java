@@ -3,7 +3,7 @@ package com.fasterxml.jackson.test.vuln;
 import oracle.jdbc.connector.OracleManagedConnectionFactory;
 import oracle.jdbc.rowset.OracleJDBCRowSet;
 
-public class OracleJDBCVulnTest extends VulnTestBase
+public class OracleJDBCVulnCVE2018_12023Test extends VulnTestBase
 {
     public void testConnectionFactory() throws Exception
     {

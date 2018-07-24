@@ -2,7 +2,7 @@ package com.fasterxml.jackson.test.vuln;
 
 import org.apache.ibatis.parsing.XPathParser;
 
-public class IBatisVulnTest extends VulnTestBase
+public class IBatisVulnCVE2018_11307Test extends VulnTestBase
 {
     // [databind#1931]
     public void testXPathParser() throws Exception

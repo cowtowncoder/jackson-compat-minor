@@ -7,7 +7,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.exc.InvalidDefinitionException;
 import com.fasterxml.jackson.test.BaseTest;
 
-abstract class VulnTestBase extends BaseTest
+public abstract class VulnTestBase extends BaseTest
 {
     static class PolyWrapper {
         @JsonTypeInfo(use = JsonTypeInfo.Id.CLASS,
