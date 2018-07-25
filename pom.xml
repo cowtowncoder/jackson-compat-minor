@@ -36,9 +36,9 @@ Jackson components
       -->
 <!--
     <version.dataformats>2.7.9</version.dataformats>
-    <version.dataformats>2.9.6</version.dataformats>
--->
     <version.dataformats>2.8.11</version.dataformats>
+-->
+    <version.dataformats>2.9.6</version.dataformats>
     <version.guava>${version.dataformats}</version.guava>
     <version.datatypes>${version.dataformats}</version.datatypes>
 
@@ -201,6 +201,36 @@ Jackson components
       <artifactId>jodd-db</artifactId>
       <version>3.7.1</version>
     </dependency>
+
+    <!-- 23-Jul-2017: batch of 4 vulns:
+    
+        * blaze-ds
+        * slf4j-ext
+        * JDK (DRSHelper)
+        * Axis2 (jaxws
+    -->
+
+    <dependency>
+	   <groupId>com.adobe.blazeds</groupId>
+	   <artifactId>blazeds-opt</artifactId>
+	   <version>3.2.0.3978</version>
+    </dependency>
+    <dependency>
+        <groupId>com.adobe.blazeds</groupId>
+	   <artifactId>blazeds-core</artifactId>
+        <version>3.2.0.3978</version>
+    </dependency>
+    <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-ext</artifactId>
+        <version>1.8.0-beta2</version>
+    </dependency>
+    <dependency>
+        <groupId>org.apache.axis2</groupId>
+        <artifactId>axis2-jaxws</artifactId>
+        <version>1.7.8</version>
+    </dependency>
+
   </dependencies>
 
   <!-- Stupid Oracle with their Stupid Control Freak Issues -->
