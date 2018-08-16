@@ -4,9 +4,9 @@ import com.fasterxml.jackson.test.vuln.VulnTestBase;
 
 public class Slf4jExtTest extends VulnTestBase
 {
-    // [databind#]
+    // [databind#2097]
     @SuppressWarnings("deprecation")
-    public void testDataSources() throws Exception
+    public void testSlf4jExt() throws Exception
     {
         _testIllegalType(org.slf4j.ext.EventData.class);
     }
