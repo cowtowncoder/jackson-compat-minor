@@ -59,7 +59,7 @@ Jackson components
     <dependency>
       <groupId>com.fasterxml.jackson.core</groupId>
       <artifactId>jackson-databind</artifactId>
-      <version>${version.core}</version>
+      <version>${version.databind}</version>
     </dependency>
 
     <!-- JAXB sort of ubiquitous -->
