@@ -1,8 +1,10 @@
-package com.fasterxml.jackson.test.vuln;
+package com.fasterxml.jackson.test.vuln2186;
 
 import java.util.Collections;
 
-public class JBoss2186VulnTest extends VulnTestBase
+import com.fasterxml.jackson.test.vuln.VulnTestBase;
+
+public class JBossVulnTest extends VulnTestBase
 {
     // [databind#2186]
     public void testDocumentEditor() throws Exception

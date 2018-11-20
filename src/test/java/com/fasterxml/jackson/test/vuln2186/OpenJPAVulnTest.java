@@ -1,8 +1,10 @@
-package com.fasterxml.jackson.test.vuln;
+package com.fasterxml.jackson.test.vuln2186;
 
 import java.util.*;
 
-public class OpenJPA2186VulnTest extends VulnTestBase
+import com.fasterxml.jackson.test.vuln.VulnTestBase;
+
+public class OpenJPAVulnTest extends VulnTestBase
 {
     // [databind#2186]
     public void testRegistryManagedRuntime() throws Exception

@@ -1,6 +1,8 @@
-package com.fasterxml.jackson.test.vuln;
+package com.fasterxml.jackson.test.vuln2186;
 
-public class Axis2Transport2186VulnTest extends VulnTestBase
+import com.fasterxml.jackson.test.vuln.VulnTestBase;
+
+public class Axis2TransportVulnTest extends VulnTestBase
 {
     // [databind#2186]
     public void testRegistryManagedRuntime() throws Exception

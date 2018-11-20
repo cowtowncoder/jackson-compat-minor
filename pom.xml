@@ -28,7 +28,7 @@ Jackson components
     <!-- Basic idea: new(er) version of core components, older of dataformats
       -->
     <version.annotations>2.9.0</version.annotations>
-    <version.core>2.9.7</version.core>
+    <version.core>2.9.8-SNAPSHOT</version.core>
     <version.databind>${version.core}</version.databind>
 
     <!-- 02-May-2017, tatu: Versions 2.8.x and 2.7.x work;
@@ -237,7 +237,16 @@ Jackson components
         <artifactId>jboss-common-core</artifactId>
         <version>2.5.0.Final</version>
     </dependency>
-
+    <dependency>
+      <groupId>org.apache.openjpa</groupId>
+      <artifactId>openjpa</artifactId>
+      <version>2.4.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.axis2</groupId>
+      <artifactId>axis2-transport-jms</artifactId>
+      <version>1.7.8</version>
+    </dependency>
     <!--  /Vuln #2186 -->
   </dependencies>
 

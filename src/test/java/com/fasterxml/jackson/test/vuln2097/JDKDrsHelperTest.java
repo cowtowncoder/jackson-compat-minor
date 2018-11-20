@@ -1,4 +1,4 @@
-package com.fasterxml.jackson.test.vuln201807;
+package com.fasterxml.jackson.test.vuln2097;
 
 import com.fasterxml.jackson.test.vuln.VulnTestBase;
 
