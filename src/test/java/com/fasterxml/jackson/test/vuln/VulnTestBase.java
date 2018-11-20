@@ -1,5 +1,8 @@
 package com.fasterxml.jackson.test.vuln;
 
+import java.util.List;
+import java.util.Map;
+
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
 
 import com.fasterxml.jackson.databind.JsonMappingException;
@@ -18,25 +21,33 @@ public abstract class VulnTestBase extends BaseTest
     protected final ObjectMapper MAPPER = newObjectMapper();
 
     protected void _testIllegalType(String nastyClassName) throws Exception {
-        _testIllegalType(nastyClassName, "'/tmp/foobar.txt'");
+        _testIllegalTypeWithValue(nastyClassName, "/tmp/foobar.txt");
     }
 
     protected void _testIllegalType(Class<?> nasty) throws Exception {
-        _testIllegalType(nasty.getName(), "'/tmp/foobar.txt'");
+        _testIllegalTypeWithValue(nasty.getName(), "/tmp/foobar.txt");
     }
 
     protected void _testIllegalType(Class<?> nasty, String value) throws Exception {
-        _testIllegalType(nasty.getName(), value);
+        _testIllegalTypeWithValue(nasty.getName(), aposToQuotes(value));
     }
 
-    private void _testIllegalType(String clsName, String value) throws Exception
-    {
+    protected void _testIllegalType(Class<?> nasty, List<Object> value) throws Exception {
+        _testIllegalTypeWithValue(nasty.getName(), value);
+    }
+
+    protected void _testIllegalType(Class<?> nasty, Map<?,?> value) throws Exception {
+        _testIllegalTypeWithValue(nasty.getName(), value);
+    }
+    
+    protected void _testIllegalTypeWithValue(String clsName, Object payload) throws Exception {
         // While usually exploited via default typing let's not require
         // it here; mechanism still the same
-        String json = aposToQuotes("{'v':['"+clsName+"',"+value+"]}");
+        String json = "{\"v\":[\""+clsName+"\","+MAPPER.writeValueAsString(payload)+"]}";
         try {
-            MAPPER.readValue(json, PolyWrapper.class);
-            fail("Should not pass");
+            PolyWrapper w = MAPPER.readValue(json, PolyWrapper.class);
+            String desc = (w.v == null) ? "NULL" : w.v.getClass().getName();
+            fail("Should not pass: got instance of type "+desc);
         } catch (JsonMappingException e) {
             _verifySecurityException(e, clsName);
         }
