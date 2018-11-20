@@ -231,6 +231,14 @@ Jackson components
         <version>1.7.8</version>
     </dependency>
 
+    <!--  Vuln #2186 -->
+    <dependency>
+        <groupId>org.jboss</groupId>
+        <artifactId>jboss-common-core</artifactId>
+        <version>2.5.0.Final</version>
+    </dependency>
+
+    <!--  /Vuln #2186 -->
   </dependencies>
 
   <!-- Stupid Oracle with their Stupid Control Freak Issues -->
