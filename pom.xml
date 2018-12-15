@@ -4,7 +4,7 @@
   <parent>
     <groupId>com.fasterxml.jackson</groupId>
     <artifactId>jackson-parent</artifactId>
-    <version>2.9.1</version>
+    <version>2.9.1.2</version>
   </parent>
   <groupId>com.fasterxml.jackson.util</groupId>
   <artifactId>jackson-compat-minor</artifactId>
@@ -28,7 +28,7 @@ Jackson components
     <!-- Basic idea: new(er) version of core components, older of dataformats
       -->
     <version.annotations>2.9.0</version.annotations>
-    <version.core>2.9.8-SNAPSHOT</version.core>
+    <version.core>2.9.8</version.core>
     <version.databind>${version.core}</version.databind>
 
     <!-- 02-May-2017, tatu: Versions 2.8.x and 2.7.x work;
