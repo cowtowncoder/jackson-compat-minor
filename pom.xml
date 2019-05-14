@@ -29,7 +29,10 @@ Jackson components
       -->
     <version.annotations>2.9.0</version.annotations>
     <version.core>2.9.8</version.core>
+    <version.databind>2.9.9-SNAPSHOT</version.databind>
+<!--
     <version.databind>${version.core}</version.databind>
+-->
 
     <!-- 02-May-2017, tatu: Versions 2.8.x and 2.7.x work;
               2.6.x fails for Smile, XML and YAML
@@ -42,7 +45,7 @@ Jackson components
     <version.guava>${version.dataformats}</version.guava>
     <version.datatypes>${version.dataformats}</version.datatypes>
 
-     <version.spring>4.3.17.RELEASE</version.spring>
+     <version.spring>4.3.24.RELEASE</version.spring>
   </properties>
 
   <dependencies>
@@ -247,7 +250,15 @@ Jackson components
       <artifactId>axis2-transport-jms</artifactId>
       <version>1.7.8</version>
     </dependency>
-    <!--  /Vuln #2186 -->
+    <!-- /Vuln #2186 -->
+
+    <!-- Vuln #2326 -->
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>8.0.15</version>
+    </dependency>
+
   </dependencies>
 
   <!-- Stupid Oracle with their Stupid Control Freak Issues -->
