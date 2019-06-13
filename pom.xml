@@ -28,8 +28,8 @@ Jackson components
     <!-- Basic idea: new(er) version of core components, older of dataformats
       -->
     <version.annotations>2.9.0</version.annotations>
-    <version.core>2.9.8</version.core>
-    <version.databind>2.9.9-SNAPSHOT</version.databind>
+    <version.core>2.9.9</version.core>
+    <version.databind>2.9.10-SNAPSHOT</version.databind>
 <!--
     <version.databind>${version.core}</version.databind>
 -->
