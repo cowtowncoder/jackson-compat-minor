@@ -42,7 +42,7 @@ Jackson components
 
     <version.dataformats>${version.core}</version.dataformats>
 -->
-    <version.dataformats>2.9.8</version.dataformats>
+    <version.dataformats>2.9.9</version.dataformats>
     <version.guava>${version.dataformats}</version.guava>
     <version.datatypes>${version.dataformats}</version.datatypes>
 
