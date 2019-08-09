@@ -4,4 +4,6 @@
 # git config --global merge.ours.driver true
 # (and if ever need to disable change `true` to `false`
 
-pom.xml merge=ours
+# ... actually, let's NOT block as we need many additions to pom.xml so...
+
+# pom.xml merge=ours

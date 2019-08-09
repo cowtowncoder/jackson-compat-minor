@@ -271,12 +271,27 @@ Jackson components
       <version>2.0.6</version>
     </dependency>
 
-    <!--  #2387: EHCache -->
+    <!-- #2387: EHCache -->
     <dependency>
       <groupId>net.sf.ehcache</groupId>
       <artifactId>ehcache</artifactId>
       <version>2.10.6</version>
     </dependency>
+
+    <!-- #2410: HikariCP -->
+    <dependency>
+      <groupId>com.zaxxer</groupId>
+      <artifactId>HikariCP</artifactId>
+      <version>3.3.1</version>
+    </dependency>
+
+    <!-- #2420: CXF JAX-RS Provider -->
+    <dependency>
+      <groupId>org.apache.cxf</groupId>
+      <artifactId>cxf-rt-frontend-jaxrs</artifactId>
+      <version>3.1.2</version>
+    </dependency>
+
   </dependencies>
 
   <!-- Stupid Oracle with their Stupid Control Freak Issues -->
