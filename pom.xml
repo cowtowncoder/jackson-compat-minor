@@ -247,6 +247,13 @@ Jackson components
       <version>2.10.6</version>
     </dependency>
 
+    <!-- #2410: HikariCP -->
+    <dependency>
+      <groupId>com.zaxxer</groupId>
+      <artifactId>HikariCP</artifactId>
+      <version>3.3.1</version>
+    </dependency>
+
     <!-- #2420: CXF JAX-RS Provider -->
     <dependency>
       <groupId>org.apache.cxf</groupId>
