@@ -28,7 +28,7 @@ Jackson components
     <!-- Basic idea: new(er) version of core components, older of dataformats
       -->
     <version.annotations>2.10.0.pr1</version.annotations>
-    <version.core>2.10.0.pr1</version.core>
+    <version.core>2.10.0.pr2-SNAPSHOT</version.core>
     <version.databind>2.10.0.pr2-SNAPSHOT</version.databind>
 
     <!-- 14-May-2019, tatu: Versions 2.9.x and 2.8.x work;
@@ -45,6 +45,7 @@ Jackson components
     <version.dataformats>2.9.9</version.dataformats>
     <version.guava>${version.dataformats}</version.guava>
     <version.datatypes>${version.dataformats}</version.datatypes>
+    <version.jacksonjr>${version.dataformats}</version.jacksonjr>
 
      <version.spring>4.3.24.RELEASE</version.spring>
   </properties>
@@ -108,6 +109,13 @@ Jackson components
       <groupId>com.fasterxml.jackson.dataformat</groupId>
       <artifactId>jackson-dataformat-yaml</artifactId>
       <version>${version.dataformats}</version>
+    </dependency>
+
+    <!-- Then Jackson-jr -->
+    <dependency>
+      <groupId>com.fasterxml.jackson.jr</groupId>
+      <artifactId>jackson-jr-objects</artifactId>
+      <version>${version.jacksonjr}</version>
     </dependency>
 
     <!-- Also small set of choice datatypes -->
