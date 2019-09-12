@@ -29,7 +29,7 @@ Jackson components
       -->
     <version.annotations>2.10.0.pr2</version.annotations>
     <version.core>2.10.0.pr2</version.core>
-    <version.databind>2.10.0.pr2</version.databind>
+    <version.databind>2.10.0-SNAPSHOT</version.databind>
 
     <!-- 14-May-2019, tatu: Versions 2.9.x and 2.8.x work;
               2.7.x fails for Guava + Avro combination
