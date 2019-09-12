@@ -29,7 +29,7 @@ Jackson components
       -->
     <version.annotations>2.8.0</version.annotations>
     <version.core>2.8.11</version.core>
-    <version.databind>2.8.11.4</version.databind>
+    <version.databind>2.8.11.5-SNAPSHOT</version.databind>
 
     <!-- 02-May-2017, tatu: Version 2.7.x works;
                2.6.x fails for Smile, XML and YAML
