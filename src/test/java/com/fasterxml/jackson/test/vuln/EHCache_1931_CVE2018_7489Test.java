@@ -4,9 +4,9 @@ import java.util.Collections;
 
 import net.sf.ehcache.transaction.manager.DefaultTransactionManagerLookup;
 
-public class EHCache2Vuln_2387Test extends VulnTestBase
+public class EHCache_1931_CVE2018_7489Test extends VulnTestBase
 {
-    // [databind#1931]
+    // [databind#1931] / CVE-2018-7489
     public void testTransactionMgrLookup() throws Exception
     {
         _testIllegalType(DefaultTransactionManagerLookup.class,
