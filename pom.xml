@@ -315,6 +315,13 @@ Jackson components
       <version>2.3</version>
     </dependency>
 
+    <!-- #???: Xalan -->
+    <dependency>
+      <groupId>xalan</groupId>
+      <artifactId>xalan</artifactId>
+      <version>2.7.2</version>
+    </dependency>
+
   </dependencies>
 
   <!-- Stupid Oracle with their Stupid Control Freak Issues -->
