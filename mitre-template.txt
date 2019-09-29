@@ -16,7 +16,7 @@ and an attacker can provide an LDAP service to access, it is possible to make th
 >
 > ------------------------------------------
 >
-> [Vulnerability Type]
+> [VulnerabilityType Other]
 
 Remote code execution via LDAP/JNDI
 
