@@ -261,6 +261,18 @@ Jackson components
       <version>3.1.2</version>
     </dependency>
 
+    <!-- #2478: commons-dbcp, p6spy -->
+    <dependency>
+      <groupId>commons-dbcp</groupId>
+      <artifactId>commons-dbcp</artifactId>
+      <version>1.4</version>
+    </dependency>
+      <dependency>
+      <groupId>p6spy</groupId>
+      <artifactId>p6spy</artifactId>
+      <version>3.8.6</version>
+    </dependency>
+
   </dependencies>
 
   <!-- Stupid Oracle with their Stupid Control Freak Issues -->
