@@ -5,7 +5,8 @@ import org.apache.commons.dbcp.datasources.SharedPoolDataSource;
 import com.google.common.collect.ImmutableMap;
 import com.p6spy.engine.spy.P6DataSource;
 
-public class CommonsDbcp_2478VulnCVE2019_Test extends VulnTestBase
+// CVE-2019-16942
+public class CommonsDbcp_2478VulnCVE2019_16942Test extends VulnTestBase
 {
     public void testDBCPDataSource1() throws Exception
     {

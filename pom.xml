@@ -334,6 +334,12 @@ Jackson components
       <version>3.8.6</version>
     </dependency>
 
+    <!-- #2498: log4j-extras -->
+    <dependency>
+      <groupId>log4j</groupId>
+      <artifactId>apache-log4j-extras</artifactId>
+      <version>1.2.17</version>
+    </dependency>
   </dependencies>
 
   <!-- Stupid Oracle with their Stupid Control Freak Issues -->
