@@ -6,7 +6,7 @@ import net.sf.ehcache.transaction.manager.DefaultTransactionManagerLookup;
 
 public class EHCache2Vuln_2387Test extends VulnTestBase
 {
-    // [databind#1931]
+    // [databind#2387]
     public void testTransactionMgrLookup() throws Exception
     {
         _testIllegalType(DefaultTransactionManagerLookup.class,

@@ -240,7 +240,7 @@ Jackson components
       <version>2.0.6</version>
     </dependency>
 
-    <!-- #2387: EHCache -->
+    <!-- #2387, 2526: EHCache -->
     <dependency>
       <groupId>net.sf.ehcache</groupId>
       <artifactId>ehcache</artifactId>
