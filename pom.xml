@@ -29,7 +29,7 @@ Jackson components
       -->
     <version.annotations>2.9.0</version.annotations>
     <version.core>2.9.10</version.core>
-    <version.databind>2.9.10.1-SNAPSHOT</version.databind>
+    <version.databind>2.9.10.2-SNAPSHOT</version.databind>
 <!--
     <version.databind>${version.core}</version.databind>
 -->
@@ -271,7 +271,7 @@ Jackson components
       <version>2.0.6</version>
     </dependency>
 
-    <!-- #2387, #2460: EHCache -->
+    <!-- #2387, #2460, #2526: EHCache -->
     <dependency>
       <groupId>net.sf.ehcache</groupId>
       <artifactId>ehcache</artifactId>
