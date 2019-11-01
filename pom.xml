@@ -283,7 +283,7 @@ Jackson components
       <version>2.0.6</version>
     </dependency>
 
-    <!-- #2387, #2460: EHCache -->
+    <!-- #2387, #2460, #2526: EHCache -->
     <dependency>
       <groupId>net.sf.ehcache</groupId>
       <artifactId>ehcache</artifactId>
@@ -346,6 +346,12 @@ Jackson components
       <version>3.8.6</version>
     </dependency>
 
+    <!-- #2498: log4j-extras -->
+    <dependency>
+      <groupId>log4j</groupId>
+      <artifactId>apache-log4j-extras</artifactId>
+      <version>1.2.17</version>
+    </dependency>
   </dependencies>
 
   <!-- Stupid Oracle with their Stupid Control Freak Issues -->
