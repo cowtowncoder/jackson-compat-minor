@@ -62,7 +62,7 @@ true
 >
 > [Attack Vectors]
 
-Remote code execution via LDAP/JNDI/JMS
+Remote code execution via LDAP/JNDI/RMI
 
 Remote read access to local(ly mounted) file system
 
