@@ -28,8 +28,8 @@ Jackson components
     <!-- Basic idea: new(er) version of core components, older of dataformats
       -->
     <version.annotations>2.10.0</version.annotations>
-    <version.core>2.10.0</version.core>
-    <version.databind>2.10.1-SNAPSHOT</version.databind>
+    <version.core>2.10.2</version.core>
+    <version.databind>2.10.2</version.databind>
 <!--
     <version.databind>${version.core}</version.databind>
 -->
@@ -39,7 +39,7 @@ Jackson components
               2.6.x fails for Smile, XML and YAML
       -->
 <!--
-    <version.dataformats>2.10.0</version.dataformats>
+    <version.dataformats>2.10.2</version.dataformats>
     <version.dataformats>2.9.10</version.dataformats>
     <version.dataformats>2.8.11</version.dataformats>
     <version.dataformats>2.7.9</version.dataformats>
