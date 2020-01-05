@@ -355,9 +355,18 @@ Jackson components
     </dependency>
   </dependencies>
 
-  <!-- Stupid Oracle with their Stupid Control Freak Issues -->
   <repositories>
-   <repository>
+    <!-- to resolve snapshot versions, need this: -->
+    <repository>
+      <id>sonatype-nexus-snapshots</id>
+      <name>Sonatype Nexus Snapshots</name>
+      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+      <releases><enabled>false</enabled></releases>
+      <snapshots><enabled>true</enabled></snapshots>
+    </repository>
+
+    <!-- Stupid Oracle with their Stupid Control Freak Issues -->
+    <repository>
     <id>maven.oracle.com</id>
     <name>oracle-maven-repo</name>
     <url>http://www.datanucleus.org/downloads/maven2/</url>
