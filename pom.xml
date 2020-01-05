@@ -39,7 +39,8 @@ Jackson components
               2.6.x fails for Smile, XML and YAML
       -->
 <!--
-    <version.dataformats>2.10.0</version.dataformats>
+    <version.dataformats>${version.core}</version.dataformats>
+    <version.dataformats>2.10.2</version.dataformats>
     <version.dataformats>2.9.10</version.dataformats>
     <version.dataformats>2.8.11</version.dataformats>
     <version.dataformats>2.7.9</version.dataformats>
