@@ -54,9 +54,14 @@ public class JDKBundledVulnTest extends VulnTestBase
     }
 
     // // // Tests for [databind#1855]
+
+    // 05-Jan-2020, tatu: Not present after JDK8; could check for different errors
+    //    etc, but for now just comment out.
+    /*
     public void testJDKTypes1855() throws Exception
     {
         // apparently included by some version(s) JDK?
         _testIllegalType("com.sun.org.apache.bcel.internal.util.ClassLoader");
     }
+    */
 }
