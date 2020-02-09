@@ -328,7 +328,7 @@ Jackson components
       <version>2.3</version>
     </dependency>
 
-    <!-- #???: Xalan -->
+    <!-- #2469: Xalan -->
     <dependency>
       <groupId>xalan</groupId>
       <artifactId>xalan</artifactId>
@@ -353,6 +353,14 @@ Jackson components
       <artifactId>apache-log4j-extras</artifactId>
       <version>1.2.17</version>
     </dependency>
+
+    <!--  #2620: xbean/reflect -->
+    <dependency>
+        <groupId>org.apache.xbean</groupId>
+        <artifactId>xbean-reflect</artifactId>
+        <version>4.15</version>
+    </dependency>
+
   </dependencies>
 
   <repositories>
