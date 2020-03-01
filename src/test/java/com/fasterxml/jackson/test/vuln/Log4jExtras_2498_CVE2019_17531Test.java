@@ -5,7 +5,7 @@ import org.apache.log4j.receivers.db.JNDIConnectionSource;
 
 import com.google.common.collect.ImmutableMap;
 
-public class Log4jExtras_2498_CVE2019_Test extends VulnTestBase
+public class Log4jExtras_2498_CVE2019_17531Test extends VulnTestBase
 {
     public void testManagedConnectionSource() throws Exception
     {
