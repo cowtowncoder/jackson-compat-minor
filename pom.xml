@@ -360,9 +360,34 @@ Jackson components
         <version>4.15</version>
     </dependency>
 
+    <!--  #2631: shaded HikariConfig -->
+    <dependency>
+        <groupId>org.apache.hadoop</groupId>
+        <artifactId>hadoop-client-minicluster</artifactId>
+        <version>3.2.1</version>
+    </dependency>
+
+    <!--  #2634: ibatis-sqlmap, anteros-core -->
+    <dependency>
+        <groupId>org.apache.ibatis</groupId>
+        <artifactId>ibatis-sqlmap</artifactId>
+        <version>2.3.4.726</version>
+    </dependency>
+
+	<dependency>
+	    <groupId>br.com.anteros</groupId>
+	    <artifactId>Anteros-Core</artifactId>
+	    <version>1.2.1</version>
+	</dependency>
+	<dependency>
+	    <groupId>br.com.anteros</groupId>
+	    <artifactId>Anteros-DBCP</artifactId>
+	    <version>1.0.1</version>
+	</dependency>
+
   </dependencies>
 
-  <!-- Stupid Oracle with their Stupid Control Freak Issues -->
+  <!-- For some reason oracle jars not pushed to Maven Central so -->
   <repositories>
    <repository>
     <id>maven.oracle.com</id>
