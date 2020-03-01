@@ -3,7 +3,7 @@ package com.fasterxml.jackson.test.vuln;
 import java.util.Collections;
 
 
-public class XBean_2620_CVE2020_xxxxxTest // [databind#2620] with Xbean-reflect
+public class XBean_2620_CVE2020_8840Test
     extends VulnTestBase
 {
     public void testXBeanVuln() throws Exception
