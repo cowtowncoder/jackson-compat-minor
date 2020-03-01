@@ -55,6 +55,7 @@ public abstract class VulnTestBase extends BaseTest
 
     protected void _verifySecurityException(Throwable t, String clsName) throws Exception
     {
+t.printStackTrace();        
         _verifyException(t, InvalidDefinitionException.class,
                 "Illegal type",
                 "to deserialize",
