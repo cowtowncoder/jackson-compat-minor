@@ -2,7 +2,7 @@ package com.fasterxml.jackson.test.vuln;
 
 import java.util.Collections;
 
-public class HikariConfigShaded_2631_CVE2020_xxxTest
+public class HikariConfigShaded_2631_CVE2020_9546Test
     extends VulnTestBase
 {
     public void testVuln2631() throws Exception
