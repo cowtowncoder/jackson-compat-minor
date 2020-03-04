@@ -2,7 +2,7 @@ package com.fasterxml.jackson.test.vuln;
 
 import java.util.Collections;
 
-public class Ibatis_Anteros_2634_CVE2020_xxxTest
+public class Ibatis_Anteros_2634_CVE2020_9548Test
     extends VulnTestBase
 {
     public void testVuln2634IBatis() throws Exception
