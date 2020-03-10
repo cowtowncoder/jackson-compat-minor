@@ -21,6 +21,7 @@ public class JDKBundledVulnTest extends VulnTestBase
 
     // // // Tests for [databind#1599]
 
+    @SuppressWarnings("deprecation")
     public void testXalanTypes1599() throws Exception
     {
         final String clsName = "com.sun.org.apache.xalan.internal.xsltc.trax.TemplatesImpl";
