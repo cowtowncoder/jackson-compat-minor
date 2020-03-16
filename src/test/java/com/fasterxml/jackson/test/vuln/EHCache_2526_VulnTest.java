@@ -5,7 +5,7 @@ import net.sf.ehcache.transaction.manager.selector.GlassfishSelector;
 
 import com.google.common.collect.ImmutableMap;
 
-public class EHCacheVuln_2526VulnCVE2019_Test extends VulnTestBase
+public class EHCache_2526_VulnTest extends VulnTestBase
 {
     public void testGenericJNDISelector() throws Exception
     {
