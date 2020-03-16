@@ -411,6 +411,14 @@ Jackson components
         <artifactId>quartz</artifactId>
         <version>2.3.2</version>
     </dependency>
+
+    <!-- 2659: aries-transaction-jms -->
+    <dependency>
+        <groupId>org.apache.aries.transaction</groupId>
+        <artifactId>org.apache.aries.transaction.jms</artifactId>
+        <version>2.0.0</version>
+    </dependency>
+
   </dependencies>
 
   <repositories>
