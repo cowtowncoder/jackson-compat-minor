@@ -3,7 +3,7 @@ package com.fasterxml.jackson.test.vuln;
 import java.util.Arrays;
 import java.util.Collections;
 
-public class IgniteJta_2658_CVE2019_VulnTest
+public class IgniteJta_2658_CVE2020_10650Test
     extends VulnTestBase
 {
     // This one has confirmed reproduction (although example below is missing
