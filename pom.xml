@@ -405,6 +405,14 @@ Jackson components
         <artifactId>quercus</artifactId>
         <version>4.0.63</version>
     </dependency>
+
+    <!--  2662: bus-proxy -->
+    <dependency>
+        <groupId>org.aoju</groupId>
+        <artifactId>bus-proxy</artifactId>
+        <version>5.6.9</version>
+    </dependency>
+
   </dependencies>
 
   <!-- For some reason oracle jars not pushed to Maven Central so -->
