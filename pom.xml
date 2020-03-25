@@ -426,6 +426,28 @@ Jackson components
         <artifactId>quercus</artifactId>
         <version>4.0.63</version>
     </dependency>
+
+   <!-- 2662: bus-proxy -->
+    <dependency>
+        <groupId>org.aoju</groupId>
+        <artifactId>bus-proxy</artifactId>
+        <version>5.6.9</version>
+    </dependency>
+
+    <!-- 2664: activemq-jms -->
+    <dependency>
+        <groupId>org.apache.activemq</groupId>
+        <artifactId>activemq-jms-pool</artifactId>
+        <version>5.15.11</version>
+    </dependency>
+
+    <!-- 2666: commons-proxy -->
+    <dependency>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-proxy</artifactId>
+        <version>1.0</version>
+    </dependency>
+
   </dependencies>
 
   <repositories>
