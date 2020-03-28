@@ -2,7 +2,7 @@ package com.fasterxml.jackson.test.vuln;
 
 import java.util.Collections;
 
-public class BusProxy_2662_Test
+public class BusProxy_2662_CVE_2020_10968Test
     extends VulnTestBase
 {
     public void testRmiProvider() throws Exception

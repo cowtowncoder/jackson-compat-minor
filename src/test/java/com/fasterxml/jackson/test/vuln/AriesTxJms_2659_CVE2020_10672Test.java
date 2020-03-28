@@ -2,7 +2,7 @@ package com.fasterxml.jackson.test.vuln;
 
 import java.util.*;
 
-public class AriesTransactionJms_2659_VulnTest
+public class AriesTxJms_2659_CVE2020_10672Test
     extends VulnTestBase
 {
     public void testXaPooledConnectionFactory() throws Exception

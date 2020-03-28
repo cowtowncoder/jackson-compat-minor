@@ -3,7 +3,7 @@ package com.fasterxml.jackson.test.vuln;
 import java.util.Collections;
 
 // For [databind#2642]
-public class Swing_2642_CVE2020_Test
+public class Swing_2642_CVE2020_10969_Test
     extends VulnTestBase
 {
     public void testSwingVuln() throws Exception
