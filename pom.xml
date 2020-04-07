@@ -442,6 +442,12 @@ Jackson components
         <version>1.0</version>
     </dependency>
 
+    <!-- 2682: commons-jelly -->
+    <dependency>
+        <groupId>commons-jelly</groupId>
+        <artifactId>commons-jelly</artifactId>
+        <version>1.0</version>
+    </dependency>
 
   </dependencies>
 
