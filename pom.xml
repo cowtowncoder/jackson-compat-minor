@@ -52,7 +52,7 @@ Jackson components
     <version.datatypes>${version.dataformats}</version.datatypes>
     <version.jacksonjr>${version.dataformats}</version.jacksonjr>
 
-     <version.spring>4.3.24.RELEASE</version.spring>
+    <version.spring>4.3.26.RELEASE</version.spring>
   </properties>
 
   <dependencies>
@@ -180,6 +180,11 @@ Jackson components
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-aop</artifactId>
+      <version>${version.spring}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-beans</artifactId>
       <version>${version.spring}</version>
     </dependency>
     <dependency>
