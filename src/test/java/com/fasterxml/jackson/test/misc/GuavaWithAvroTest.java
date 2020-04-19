@@ -19,8 +19,9 @@ public class GuavaWithAvroTest extends BaseTest
 
     public void testGenerateAvroForMultimap() throws Exception
     {
-        final AvroMapper avroMapper = new AvroMapper();
-        avroMapper.registerModule(new GuavaModule());
+        final AvroMapper avroMapper = AvroMapper.builder()
+                .addModule(new GuavaModule())
+                .build();
         final AvroSchema schema = avroMapper.schemaFor(MultimapHolder.class);
         
         ObjectWriter avroWriter = avroMapper.writer(schema);

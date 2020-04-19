@@ -134,6 +134,12 @@ Jackson components
       <artifactId>jackson-datatype-joda</artifactId>
       <version>${version.datatypes}</version>
     </dependency>
+    <!-- added for 2.11 -->
+    <dependency>
+      <groupId>com.fasterxml.jackson.datatype</groupId>
+      <artifactId>jackson-datatype-json-org</artifactId>
+      <version>${version.datatypes}</version>
+    </dependency>
 
     <!-- maven-core for comparable version -->
     <dependency>
@@ -148,6 +154,13 @@ Jackson components
       <artifactId>woodstox-core</artifactId>
       <version>5.0.3</version>
       <scope>test</scope>
+    </dependency>
+
+    <!--  19-Apr-2020, tatu: Possibly temporary add to play with Groovy AstBuilder -->
+    <dependency>
+        <groupId>org.codehaus.groovy</groupId>
+        <artifactId>groovy</artifactId>
+        <version>3.0.2</version>
     </dependency>
 
     <!-- and good old junit too -->
