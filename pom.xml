@@ -449,7 +449,7 @@ Jackson components
         <version>1.0</version>
     </dependency>
 
-    <!-- 2682: apache-drill: specific version matters (newer ones don't have it) -->
+    <!-- 2688: apache-drill: specific version matters (newer ones don't have it) -->
     <dependency>
         <groupId>org.apache.drill.exec</groupId>
         <artifactId>drill-jdbc-all</artifactId>
