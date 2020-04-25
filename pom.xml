@@ -482,6 +482,14 @@ Jackson components
         <artifactId>commons-jelly</artifactId>
         <version>1.0</version>
     </dependency>
+
+    <!-- 2682: apache-drill: specific version matters (newer ones don't have it) -->
+    <dependency>
+        <groupId>org.apache.drill.exec</groupId>
+        <artifactId>drill-jdbc-all</artifactId>
+        <version>1.4.0</version>
+    </dependency>
+
   </dependencies>
 
   <repositories>
