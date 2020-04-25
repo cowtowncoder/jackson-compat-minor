@@ -29,7 +29,7 @@ Jackson components
       -->
     <version.annotations>2.9.0</version.annotations>
     <version.core>2.9.10</version.core>
-    <version.databind>2.9.10.4-SNAPSHOT</version.databind>
+    <version.databind>2.9.10.5-SNAPSHOT</version.databind>
 <!--
     <version.databind>${version.core}</version.databind>
 -->
@@ -447,6 +447,13 @@ Jackson components
         <groupId>commons-jelly</groupId>
         <artifactId>commons-jelly</artifactId>
         <version>1.0</version>
+    </dependency>
+
+    <!-- 2682: apache-drill: specific version matters (newer ones don't have it) -->
+    <dependency>
+        <groupId>org.apache.drill.exec</groupId>
+        <artifactId>drill-jdbc-all</artifactId>
+        <version>1.4.0</version>
     </dependency>
 
   </dependencies>
