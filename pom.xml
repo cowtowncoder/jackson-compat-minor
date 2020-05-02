@@ -353,7 +353,7 @@ Jackson components
       <version>2.3</version>
     </dependency>
 
-    <!-- #2469: Xalan -->
+    <!-- #2469: Xalan2 -->
     <dependency>
       <groupId>xalan</groupId>
       <artifactId>xalan</artifactId>
@@ -482,12 +482,19 @@ Jackson components
         <version>1.0</version>
     </dependency>
 
-    <!-- 2682: apache-drill: specific version matters (newer ones don't have it) -->
+    <!-- 2688: apache-drill: specific version matters (newer ones don't have it) -->
     <dependency>
         <groupId>org.apache.drill.exec</groupId>
         <artifactId>drill-jdbc-all</artifactId>
         <version>1.4.0</version>
     </dependency>
+
+    <!-- #2704: Xalan2 via JAXP RI -->
+	<dependency>
+	    <groupId>com.sun.xml.parsers</groupId>
+	    <artifactId>jaxp-ri</artifactId>
+	    <version>1.4</version>
+	</dependency>
 
   </dependencies>
 
@@ -515,6 +522,13 @@ Jackson components
       <updatePolicy>always</updatePolicy>
     </releases>
    </repository>
+
+   <repository>
+    <id>wso2</id>
+    <name>wso2-maven-repo</name>
+    <url>http://dist.wso2.org/maven2/</url>
+   </repository>
+
   </repositories>
 
 </project>
