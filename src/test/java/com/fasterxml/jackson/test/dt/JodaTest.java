@@ -13,7 +13,7 @@ public class JodaTest extends BaseTest
     static class TimeWrapper {
         public DateTime time;
     }
-    
+
     final ObjectMapper MAPPER = newMapper();
 
     public void testSimpleJoda() throws Exception

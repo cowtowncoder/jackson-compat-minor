@@ -147,11 +147,18 @@ Jackson components
       <version>3.6.3</version>
     </dependency>
 
-    <!-- 23-Feb-2016, tatu: Looks like we better use Woodstox as Stax impl, too -->
+    <!-- 04-Jun-2020, tatu: And why not Protobuf value type support too! -->
+    <dependency>
+      <groupId>com.hubspot.jackson</groupId>
+      <artifactId>jackson-datatype-protobuf</artifactId>
+      <version>0.9.11-jackson2.9</version>
+    </dependency>
+
+    <!-- 23-Feb-2016, tatu: Looks like we better use Woodstox as Stax impl, too -->    
     <dependency>
       <groupId>com.fasterxml.woodstox</groupId>
       <artifactId>woodstox-core</artifactId>
-      <version>5.2.0</version>
+      <version>6.2.1</version>
       <scope>test</scope>
     </dependency>
 
