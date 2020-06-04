@@ -10,7 +10,7 @@ import com.google.common.collect.ImmutableSortedSet;
 public class GuavaTest extends BaseTest
 {
     final ObjectMapper MAPPER = newMapper();
-    
+
     public void testImmutableSortedSet() throws Exception
     {
         ImmutableSortedSet<Integer> set = MAPPER.readValue("[5,1,2]",
