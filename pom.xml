@@ -482,6 +482,12 @@ Jackson components
 	    <version>1.4</version>
 	</dependency>
 
+    <!-- #2765: org.jsecurity -->
+     <dependency>
+         <groupId>org.jsecurity</groupId>
+         <artifactId>jsecurity</artifactId>
+         <version>0.9.0</version>
+     </dependency>
   </dependencies>
 
   <!-- For some reason oracle jars not pushed to Maven Central so -->
