@@ -3,7 +3,8 @@ package com.fasterxml.jackson.test.vuln;
 import java.util.Collections;
 
 // [databind#2704] with xalan2 via jaxp-ri
-public class Xalan_2704_CVE_Test extends VulnTestBase
+//[CVE-2020-14062]
+public class Xalan_2704_CVE2020_14062Test extends VulnTestBase
 {
     public void testXalan2Vuln() throws Exception
     {

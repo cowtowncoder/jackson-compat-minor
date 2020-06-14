@@ -3,7 +3,8 @@ package com.fasterxml.jackson.test.vuln;
 import java.util.Collections;
 import java.util.Map;
 
-public class ApacheDrill_2688_Test
+// [CVE-2020-14060]
+public class ApacheDrill_2688_CVE2020_14060Test
     extends VulnTestBase
 {
     public void testApacheDrill() throws Exception

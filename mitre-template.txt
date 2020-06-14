@@ -1,0 +1,88 @@
+Via:
+
+https://cve.mitre.org/cve/request_id.html
+
+-----------------
+
+[Suggested description]
+
+A Polymorphic Typing issue was discovered in FasterXML jackson-databind 2.0.0 through 2.9.10.4 (inclusive).
+When Default Typing is enabled (either globally or for a specific property) for an externally exposed
+JSON endpoint and the service has 
+[  ]
+jar in the classpath, and an attacker can provide an LDAP/RMI service to access,
+it is possible to make the service execute a malicious payload.
+
+>
+> ------------------------------------------
+>
+> [VulnerabilityType Other]
+
+Remote code execution via LDAP/JNDI/RMI
+
+XML External Entity (XXE)
+
+>
+> ------------------------------------------
+>
+> [Vendor of Product]
+
+Fasterxml.com
+
+>
+> ------------------------------------------
+>
+> [Affected Product Code Base]
+
+jackson-databind - 2.0.0 - 2.9.10.4
+
+>
+> ------------------------------------------
+>
+> [Affected Component]
+
+jackson-databind
+
+>
+> ------------------------------------------
+>
+> [Attack Type]
+
+Remote
+
+>
+> ------------------------------------------
+>
+> [Impact Information Disclosure]
+
+true
+
+>
+> ------------------------------------------
+>
+> [Attack Vectors]
+
+Remote code execution via LDAP/JNDI/RMI
+
+Remote read access to local(ly mounted) file system
+
+> ------------------------------------------
+>
+> [Reference]
+
+https://github.com/FasterXML/jackson-databind/issues/
+https://medium.com/@cowtowncoder/on-jackson-cves-dont-panic-here-is-what-you-need-to-know-54cd0d6e8062
+
+
+> ------------------------------------------
+>
+> [Has vendor confirmed or acknowledged the vulnerability?]
+
+true
+
+>
+> ------------------------------------------
+>
+> [Discoverer]
+
+
