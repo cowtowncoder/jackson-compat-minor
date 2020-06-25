@@ -151,7 +151,7 @@ Jackson components
     <dependency>
       <groupId>com.hubspot.jackson</groupId>
       <artifactId>jackson-datatype-protobuf</artifactId>
-      <version>0.9.11-jackson2.9</version>
+      <version>0.9.12</version>
     </dependency>
 
     <!-- 23-Feb-2016, tatu: Looks like we better use Woodstox as Stax impl, too -->    
