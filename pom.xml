@@ -513,6 +513,14 @@ Jackson components
          <artifactId>jsecurity</artifactId>
          <version>0.9.0</version>
      </dependency>
+
+    <!-- #2798: com.pastdev.httpcomponents -->
+	<dependency>
+	    <groupId>com.pastdev.httpcomponents</groupId>
+	    <artifactId>configuration</artifactId>
+	    <version>0.1.3</version>
+	</dependency>
+
   </dependencies>
 
   <repositories>
