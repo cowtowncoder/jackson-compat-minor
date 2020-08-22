@@ -485,12 +485,13 @@ Jackson components
         <version>6.1.7</version>
     </dependency>
 
-    <dependency> <!-- TESTING! _may_ also need to be included -->
+    <!--  or, this would ALSO work, renamed but similar contents -->
+<!--     <dependency>
         <groupId>org.arrahtec</groupId>
         <artifactId>osdq-core</artifactId>
         <version>6.1.9</version>
     </dependency>
-
+-->
 
   </dependencies>
 
