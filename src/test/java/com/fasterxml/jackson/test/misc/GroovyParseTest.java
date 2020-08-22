@@ -51,6 +51,10 @@ public class GroovyParseTest extends BaseTest
     @Ignore
     public void testDeploy() throws Exception
     {
+        if (true) {
+            return;
+        }
+        
         List<String> lines = readLines("/Users/tatu/deploy.jenkinsfile");
         // First, remove script header
         if (lines.get(0).startsWith("#!/usr/bin/env groovy")) {
