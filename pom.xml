@@ -210,12 +210,6 @@ Jackson components
       <version>3.4.6</version>
     </dependency>
 
-    <!--  Vuln: Oracle JDBC Connector -->
-    <dependency>
-      <groupId>oracle</groupId>
-      <artifactId>ojdbc6</artifactId>
-      <version>11.2.0.3</version>
-    </dependency>
     <dependency>
       <groupId>javax</groupId>
       <artifactId>javaee-api</artifactId>
@@ -483,43 +477,62 @@ Jackson components
 	</dependency>
 
     <!-- #2765: org.jsecurity -->
-     <dependency>
-         <groupId>org.jsecurity</groupId>
-         <artifactId>jsecurity</artifactId>
-         <version>0.9.0</version>
-     </dependency>
+    <dependency>
+        <groupId>org.jsecurity</groupId>
+        <artifactId>jsecurity</artifactId>
+        <version>0.9.0</version>
+    </dependency>
 
     <!-- #2798: com.pastdev.httpcomponents -->
-	<dependency>
-	    <groupId>com.pastdev.httpcomponents</groupId>
-	    <artifactId>configuration</artifactId>
-	    <version>0.1.3</version>
-	</dependency>
+    <dependency>
+        <groupId>com.pastdev.httpcomponents</groupId>
+        <artifactId>configuration</artifactId>
+        <version>0.1.3</version>
+    </dependency>
+
+    <!-- #2826: -->
+    <dependency>
+        <groupId>com.nqadmin.rowset</groupId>
+        <artifactId>jdbcrowsetimpl</artifactId>
+        <version>1.0.1</version>
+    </dependency>
+
+    <!-- #2827: -->
+    <dependency>
+        <groupId>org.arrahtec</groupId>
+        <artifactId>profiler-core</artifactId>
+        <version>6.1.7</version>
+    </dependency>
+
+    <dependency> <!-- TESTING! _may_ also need to be included -->
+        <groupId>org.arrahtec</groupId>
+        <artifactId>osdq-core</artifactId>
+        <version>6.1.9</version>
+    </dependency>
+
 
   </dependencies>
 
   <!-- For some reason oracle jars not pushed to Maven Central so -->
   <repositories>
+
+<!--  
    <repository>
     <id>maven.oracle.com</id>
     <name>oracle-maven-repo</name>
     <url>http://www.datanucleus.org/downloads/maven2/</url>
-    <!-- 
-    <url>https://maven.oracle.com</url>
-    -->
     <layout>default</layout>
     <releases>
       <enabled>true</enabled>
       <updatePolicy>always</updatePolicy>
     </releases>
    </repository>
-
+-->
    <repository>
     <id>wso2</id>
     <name>wso2-maven-repo</name>
     <url>http://dist.wso2.org/maven2/</url>
    </repository>
-
   </repositories>
 
 </project>

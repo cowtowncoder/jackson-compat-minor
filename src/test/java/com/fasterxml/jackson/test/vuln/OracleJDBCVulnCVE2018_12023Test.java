@@ -1,13 +1,30 @@
 package com.fasterxml.jackson.test.vuln;
 
-import oracle.jdbc.connector.OracleManagedConnectionFactory;
-import oracle.jdbc.rowset.OracleJDBCRowSet;
-
+// 22-Aug-2020, tatu: Would require use of Oracle Maven repo; leave out,
+//   but do not delete code yet (in case it's desired)
 public class OracleJDBCVulnCVE2018_12023Test extends VulnTestBase
 {
+    // Dependency to add in pom.xml:
+    /*
+<!--
+    <dependency>
+      <groupId>oracle</groupId>
+      <artifactId>ojdbc6</artifactId>
+      <version>11.2.0.3</version>
+    </dependency>
+    <dependency>
+      <groupId>javax</groupId>
+      <artifactId>javaee-api</artifactId>
+      <version>7.0</version>
+    </dependency>
+-->
+     */
+    
+    
+    /*
     public void testConnectionFactory() throws Exception
     {
-        _testIllegalType(OracleManagedConnectionFactory.class,
+        _testIllegalType(oracle.jdbc.connector.OracleManagedConnectionFactory.class,
                 "{'xadataSourceName':'ldap://127.0.0.1:1389/Test1', 'logWriter':null}");
     }
 
@@ -15,7 +32,12 @@ public class OracleJDBCVulnCVE2018_12023Test extends VulnTestBase
     {
         // 31-May-2018, tatu: Not sure if "command" property has effect since it should not
         //   get executed without call to `execute()` method?
-        _testIllegalType(OracleJDBCRowSet.class,
+        _testIllegalType(oracle.jdbc.rowset.OracleJDBCRowSet.class,
                 "{'dataSourceName':'ldap://127.0.0.1:1389/Test1', 'command':'SELECT * FROM ACCOUNTS'}");
+    }
+    */
+
+    public void testBogus() {
+        // just so junit won't complain
     }
 }
