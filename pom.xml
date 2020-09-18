@@ -29,7 +29,7 @@ Jackson components
       -->
     <version.annotations>2.9.0</version.annotations>
     <version.core>2.9.10</version.core>
-    <version.databind>2.9.10.6-SNAPSHOT</version.databind>
+    <version.databind>2.9.10.7-SNAPSHOT</version.databind>
 <!--
     <version.databind>${version.core}</version.databind>
 -->
