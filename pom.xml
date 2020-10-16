@@ -45,10 +45,16 @@ Jackson components
     <version.guava>${version.dataformats}</version.guava>
     <version.datatypes>${version.dataformats}</version.datatypes>
 
+    <!-- 16-Oct-2020, tatu: Uncomment to test actual Guava library version compat -->
+<!--
+    <version.guava>15.0</version.guava>
+-->
+
     <version.spring>4.3.26.RELEASE</version.spring>
   </properties>
 
   <dependencies>
+
     <dependency>
       <groupId>com.fasterxml.jackson.core</groupId>
       <artifactId>jackson-annotations</artifactId>
