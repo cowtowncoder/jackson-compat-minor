@@ -44,16 +44,19 @@ Jackson components
     <version.dataformats>${version.core}</version.dataformats>
     <version.datatypes>${version.dataformats}</version.datatypes>
 
-    <!-- 16-Oct-2020, tatu: Uncomment to test actual Guava library version compat -->
-<!--
-    <version.guava>15.0</version.guava>
--->
-
     <version.spring>4.3.26.RELEASE</version.spring>
   </properties>
 
   <dependencies>
-
+    <!-- 16-Oct-2020, tatu: To directly test older/newer Guava library, can NOT
+           change property, unfortunately, as that would only affect parent pom
+           (jackson-bom), but not dependency via Guava datatype module.
+          Instead will have to directly override
+    -->
+<!-- uncomment to force different underlying Guava version
+    <version.guava>15.0</version.guava>
+-->
+    
     <dependency>
       <groupId>com.fasterxml.jackson.core</groupId>
       <artifactId>jackson-annotations</artifactId>
