@@ -54,7 +54,11 @@ Jackson components
           Instead will have to directly override
     -->
 <!-- uncomment to force different underlying Guava version
-    <version.guava>15.0</version.guava>
+    <dependency>
+      <groupId>com.google.guava</groupId>
+      <artifactId>guava</artifactId>
+      <version>15.0</version>
+    </dependency>
 -->
     
     <dependency>
