@@ -49,9 +49,7 @@ Jackson components
     <version.dataformats>2.8.11</version.dataformats>
     <version.dataformats>2.7.9</version.dataformats>
 -->
-    <version.dataformats>2.8.11</version.dataformats>
-
-    <version.guava>${version.dataformats}</version.guava>
+    <version.dataformats>${version.core}</version.dataformats>
     <version.datatypes>${version.dataformats}</version.datatypes>
     <version.jacksonjr>${version.dataformats}</version.jacksonjr>
 
@@ -59,6 +57,18 @@ Jackson components
   </properties>
 
   <dependencies>
+     <!-- 16-Oct-2020, tatu: To directly test older/newer Guava library, can NOT
+            change property, unfortunately, as that would only affect parent pom
+            (jackson-bom), but not dependency via Guava datatype module.
+           Instead will have to directly override
+     -->
+<!-- uncomment to force different underlying Guava version
+     <dependency>
+       <groupId>com.google.guava</groupId>
+       <artifactId>guava</artifactId>
+       <version>15.0</version>
+     </dependency>
+-->
     <dependency>
       <groupId>com.fasterxml.jackson.core</groupId>
       <artifactId>jackson-annotations</artifactId>
@@ -130,7 +140,7 @@ Jackson components
     <dependency>
       <groupId>com.fasterxml.jackson.datatype</groupId>
       <artifactId>jackson-datatype-guava</artifactId>
-      <version>${version.guava}</version>
+      <version>${version.datatypes}</version>
     </dependency>
     <dependency>
       <groupId>com.fasterxml.jackson.datatype</groupId>
