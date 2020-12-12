@@ -40,11 +40,11 @@ Jackson components
       -->
 <!--
     <version.dataformats>${version.core}</version.dataformats>
-    <version.dataformats>2.11.2</version.dataformats>
+    <version.dataformats>2.11.4</version.dataformats>
+    <version.dataformats>2.10.5</version.dataformats>
     <version.dataformats>2.9.10</version.dataformats>
     <version.dataformats>2.8.11</version.dataformats>
     <version.dataformats>2.7.9</version.dataformats>
-    <version.dataformats>2.10.3</version.dataformats>
 -->
     <version.dataformats>${version.core}</version.dataformats>
     <version.datatypes>${version.dataformats}</version.datatypes>
