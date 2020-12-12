@@ -43,7 +43,7 @@ Jackson components
        -->
 <!--
     <version.dataformats>${version.core}</version.dataformats>
-    <version.dataformats>2.11.3</version.dataformats>
+    <version.dataformats>2.11.4</version.dataformats>
     <version.dataformats>2.10.5</version.dataformats>
     <version.dataformats>2.9.10</version.dataformats>
     <version.dataformats>2.8.11</version.dataformats>
