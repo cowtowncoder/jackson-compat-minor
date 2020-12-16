@@ -352,12 +352,18 @@ Jackson components
     </dependency>
 
     <!-- #2478: commons-dbcp, p6spy -->
+    <!-- #2986: commons-dbcp2 -->
     <dependency>
       <groupId>commons-dbcp</groupId>
       <artifactId>commons-dbcp</artifactId>
       <version>1.4</version>
     </dependency>
-      <dependency>
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-dbcp2</artifactId>
+      <version>2.8.0</version>
+    </dependency>
+    <dependency>
       <groupId>p6spy</groupId>
       <artifactId>p6spy</artifactId>
       <version>3.8.6</version>
