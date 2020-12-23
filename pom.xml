@@ -532,6 +532,13 @@ Jackson components
         <version>10.0.0</version>
     </dependency>
 
+    <!-- #2999 -->
+    <dependency>
+        <groupId>org.glassfish.web</groupId>
+        <artifactId>javax.servlet.jsp.jstl</artifactId>
+        <version>1.2.5</version>
+    </dependency>
+
   </dependencies>
 
   <!-- For some reason oracle jars not pushed to Maven Central so -->
