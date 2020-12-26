@@ -1,8 +1,9 @@
-package com.fasterxml.jackson.test.vuln;
+package com.fasterxml.jackson.test.vuln24xx;
 
 import org.apache.log4j.receivers.db.DriverManagerConnectionSource;
 import org.apache.log4j.receivers.db.JNDIConnectionSource;
 
+import com.fasterxml.jackson.test.vuln.VulnTestBase;
 import com.google.common.collect.ImmutableMap;
 
 public class Log4jExtras_2498_CVE2019_17531Test extends VulnTestBase
