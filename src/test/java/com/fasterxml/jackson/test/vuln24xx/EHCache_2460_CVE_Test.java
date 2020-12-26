@@ -1,6 +1,8 @@
-package com.fasterxml.jackson.test.vuln;
+package com.fasterxml.jackson.test.vuln24xx;
 
 import java.util.Collections;
+
+import com.fasterxml.jackson.test.vuln.VulnTestBase;
 
 import net.sf.ehcache.hibernate.EhcacheJtaTransactionManagerLookup;
 
