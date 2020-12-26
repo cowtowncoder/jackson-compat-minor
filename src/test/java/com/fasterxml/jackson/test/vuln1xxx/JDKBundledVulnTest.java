@@ -1,6 +1,7 @@
-package com.fasterxml.jackson.test.vuln;
+package com.fasterxml.jackson.test.vuln1xxx;
 
 import com.fasterxml.jackson.databind.*;
+import com.fasterxml.jackson.test.vuln.VulnTestBase;
 
 /**
  * Tests against vulns based on JDK-bundled (for some JDK versions anyway)
