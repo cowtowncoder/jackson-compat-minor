@@ -5,7 +5,7 @@ import java.util.Collections;
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
 
-public class HikariDataSourceVulnsTest extends VulnTestBase
+public class HikariDataSource_24xx_Test extends VulnTestBase
 {
     // [dataind#2410]
     public void testHikariConfig() throws Exception

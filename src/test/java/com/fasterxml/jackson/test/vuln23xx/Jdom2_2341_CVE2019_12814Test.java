@@ -1,4 +1,6 @@
-package com.fasterxml.jackson.test.vuln;
+package com.fasterxml.jackson.test.vuln23xx;
+
+import com.fasterxml.jackson.test.vuln.VulnTestBase;
 
 public class Jdom2_2341_CVE2019_12814Test extends VulnTestBase
 {

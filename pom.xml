@@ -529,6 +529,34 @@ Jackson components
     </dependency>
 -->
 
+    <!-- #2996 -->
+    <dependency>
+        <groupId>com.newrelic.agent.java</groupId>
+        <artifactId>newrelic-agent</artifactId>
+        <version>3.31.1</version>
+    </dependency>
+
+    <!-- #2997 -->
+    <dependency>
+        <groupId>tomcat</groupId>
+        <artifactId>naming-factory-dbcp</artifactId>
+        <version>5.5.23</version>
+    </dependency>
+
+    <!-- #2998 -->
+    <dependency>
+        <groupId>org.apache.tomcat</groupId>
+        <artifactId>tomcat-dbcp</artifactId>
+        <version>10.0.0</version>
+    </dependency>
+
+    <!-- #2999 -->
+    <dependency>
+        <groupId>org.glassfish.web</groupId>
+        <artifactId>javax.servlet.jsp.jstl</artifactId>
+        <version>1.2.5</version>
+    </dependency>
+
   </dependencies>
 
   <!-- For some reason oracle jars not pushed to Maven Central so -->

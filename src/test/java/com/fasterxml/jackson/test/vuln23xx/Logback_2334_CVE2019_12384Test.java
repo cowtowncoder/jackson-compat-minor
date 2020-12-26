@@ -1,5 +1,6 @@
-package com.fasterxml.jackson.test.vuln;
+package com.fasterxml.jackson.test.vuln23xx;
 
+import com.fasterxml.jackson.test.vuln.VulnTestBase;
 import com.google.common.collect.ImmutableMap;
 
 public class Logback_2334_CVE2019_12384Test extends VulnTestBase
