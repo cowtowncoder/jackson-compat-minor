@@ -1,4 +1,6 @@
-package com.fasterxml.jackson.test.vuln;
+package com.fasterxml.jackson.test.vuln23xx;
+
+import com.fasterxml.jackson.test.vuln.VulnTestBase;
 
 public class Mysql_2326_CVE2019_12086Test extends VulnTestBase
 {

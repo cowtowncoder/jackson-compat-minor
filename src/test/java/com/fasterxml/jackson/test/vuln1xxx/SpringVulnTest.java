@@ -1,10 +1,12 @@
-package com.fasterxml.jackson.test.vuln;
+package com.fasterxml.jackson.test.vuln1xxx;
 
 import java.util.*;
 
 import org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor;
 import org.springframework.beans.factory.config.PropertyPathFactoryBean;
 import org.springframework.context.support.FileSystemXmlApplicationContext;
+
+import com.fasterxml.jackson.test.vuln.VulnTestBase;
 
 /**
  * Tests for Spring framework types.
