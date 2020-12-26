@@ -1,9 +1,11 @@
-package com.fasterxml.jackson.test.vuln;
+package com.fasterxml.jackson.test.vuln24xx;
 
 import java.util.Collections;
 
 import org.apache.commons.dbcp.datasources.PerUserPoolDataSource;
 import org.apache.commons.dbcp.datasources.SharedPoolDataSource;
+
+import com.fasterxml.jackson.test.vuln.VulnTestBase;
 import com.p6spy.engine.spy.P6DataSource;
 
 // CVE-2019-16942
