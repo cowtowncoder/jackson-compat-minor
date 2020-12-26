@@ -1,8 +1,10 @@
-package com.fasterxml.jackson.test.vuln;
+package com.fasterxml.jackson.test.vuln24xx;
 
 import java.util.Collections;
 
 import org.apache.xalan.lib.sql.JNDIConnectionPool;
+
+import com.fasterxml.jackson.test.vuln.VulnTestBase;
 
 // [databind#2469] with xalan2
 public class Xalan_2469_CVE_Test extends VulnTestBase
