@@ -1,7 +1,9 @@
-package com.fasterxml.jackson.test.vuln;
+package com.fasterxml.jackson.test.vuln26xx;
 
 import java.util.Collections;
 import java.util.Map;
+
+import com.fasterxml.jackson.test.vuln.VulnTestBase;
 
 // [CVE-2020-14060]
 public class ApacheDrill_2688_CVE2020_14060Test

@@ -1,4 +1,6 @@
-package com.fasterxml.jackson.test.vuln;
+package com.fasterxml.jackson.test.vuln26xx;
+
+import com.fasterxml.jackson.test.vuln.VulnTestBase;
 
 // For [databind#2642]
 public class Swing_2642_CVE2020_10969_Test
