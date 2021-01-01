@@ -1,6 +1,8 @@
-package com.fasterxml.jackson.test.vuln;
+package com.fasterxml.jackson.test.vuln26xx;
 
 import java.util.*;
+
+import com.fasterxml.jackson.test.vuln.VulnTestBase;
 
 public class AriesTxJms_2659_CVE2020_10672Test
     extends VulnTestBase

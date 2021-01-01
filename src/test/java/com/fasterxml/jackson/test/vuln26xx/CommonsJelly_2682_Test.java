@@ -1,6 +1,8 @@
-package com.fasterxml.jackson.test.vuln;
+package com.fasterxml.jackson.test.vuln26xx;
 
 import java.util.Collections;
+
+import com.fasterxml.jackson.test.vuln.VulnTestBase;
 
 // [databind#2682], SSRF with commons-jelly
 public class CommonsJelly_2682_Test

@@ -1,6 +1,8 @@
-package com.fasterxml.jackson.test.vuln;
+package com.fasterxml.jackson.test.vuln26xx;
 
 import java.util.Collections;
+
+import com.fasterxml.jackson.test.vuln.VulnTestBase;
 
 public class CommonsProxy_2666_Test
     extends VulnTestBase

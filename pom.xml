@@ -581,6 +581,13 @@ Jackson components
         <version>1.2.5</version>
     </dependency>
 
+    <!-- #3003 -->
+    <dependency>
+        <groupId>org.docx4j.org.apache</groupId>
+        <artifactId>xalan-interpretive</artifactId>
+        <version>8.0.0</version>
+    </dependency>
+
   </dependencies>
 
   <repositories>

@@ -1,7 +1,9 @@
-package com.fasterxml.jackson.test.vuln;
+package com.fasterxml.jackson.test.vuln26xx;
 
 import java.util.Arrays;
 import java.util.Collections;
+
+import com.fasterxml.jackson.test.vuln.VulnTestBase;
 
 public class IgniteJta_2658_CVE2020_10650Test
     extends VulnTestBase
