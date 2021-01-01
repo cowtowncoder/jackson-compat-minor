@@ -2,7 +2,8 @@ package com.fasterxml.jackson.test.vuln;
 
 import java.util.Collections;
 
-public class GlassfishJSTL_2999_Test
+// [databind#2999] / CVE-2020-35728
+public class GlassfishJSTL_2999_CVE2020_35728Test
     extends VulnTestBase
 {
     // [databind#2999] (derivative of [databind#2469])
