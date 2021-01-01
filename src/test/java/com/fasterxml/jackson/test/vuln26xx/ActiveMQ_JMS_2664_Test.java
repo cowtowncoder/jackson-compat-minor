@@ -1,7 +1,9 @@
-package com.fasterxml.jackson.test.vuln;
+package com.fasterxml.jackson.test.vuln26xx;
 
 import java.util.Collections;
 import java.util.Map;
+
+import com.fasterxml.jackson.test.vuln.VulnTestBase;
 
 public class ActiveMQ_JMS_2664_Test
     extends VulnTestBase
