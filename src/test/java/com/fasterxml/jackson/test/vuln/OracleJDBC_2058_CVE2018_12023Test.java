@@ -1,8 +1,11 @@
 package com.fasterxml.jackson.test.vuln;
 
+// For [databind#2058]
+//
 // 22-Aug-2020, tatu: Would require use of Oracle Maven repo; leave out,
 //   but do not delete code yet (in case it's desired)
-public class OracleJDBCVulnCVE2018_12023Test extends VulnTestBase
+public class OracleJDBC_2058_CVE2018_12023Test
+    extends VulnTestBase
 {
     // Dependency to add in pom.xml:
     /*
