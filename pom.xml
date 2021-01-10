@@ -37,9 +37,13 @@ Jackson components
     -->
     <!-- 04-Jun-2020, tatu: Jackson 2.12.0-SNAPSHOT still working with
               2.11.x, 2.10.x, 2.9.x, 2.8.x
-       -->
+    -->
+    <!-- 10-Jan-2021, tatu: Jackson 2.13.0-SNAPSHOT still working with
+             2.12.x - 2.8.x
+    -->
 <!--
     <version.dataformats>${version.core}</version.dataformats>
+    <version.dataformats>2.13.0-SNAPSHOT</version.dataformats>
     <version.dataformats>2.12.1</version.dataformats>
     <version.dataformats>2.11.4</version.dataformats>
     <version.dataformats>2.10.5</version.dataformats>
