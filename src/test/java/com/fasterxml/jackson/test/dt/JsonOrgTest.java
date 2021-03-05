@@ -9,7 +9,7 @@ import com.fasterxml.jackson.test.BaseTest;
 
 public class JsonOrgTest extends BaseTest
 {
-    final ObjectMapper MAPPER = newMapper();
+    private final ObjectMapper MAPPER = newMapper();
 
     public void testReadObject() throws Exception
     {
