@@ -6,8 +6,10 @@ import java.util.Arrays;
 import junit.framework.TestCase;
 
 import com.fasterxml.jackson.core.*;
+
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.json.JsonMapper;
+
 import com.fasterxml.jackson.datatype.guava.GuavaModule;
 import com.fasterxml.jackson.datatype.joda.JodaModule;
 import com.fasterxml.jackson.datatype.jsonorg.JsonOrgModule;
@@ -16,9 +18,9 @@ public abstract class BaseTest
     extends TestCase
 {
     /*
-    /**********************************************************
+    /**********************************************************************
     /* Some sample documents
-    /**********************************************************
+    /**********************************************************************
      */
 
     protected final static int SAMPLE_SPEC_VALUE_WIDTH = 800;
@@ -49,9 +51,9 @@ public abstract class BaseTest
         ;
 
     /*
-    /**********************************************************
+    /**********************************************************************
     /* Helper classes (beans)
-    /**********************************************************
+    /**********************************************************************
      */
     
     /**
@@ -132,9 +134,9 @@ public abstract class BaseTest
     }
     
     /*
-    /**********************************************************
+    /**********************************************************************
     /* High-level helpers
-    /**********************************************************
+    /**********************************************************************
      */
 
     protected void verifyJsonSpecSampleDoc(JsonParser jp, boolean verifyContents)
@@ -273,17 +275,15 @@ public abstract class BaseTest
     /**
      * Method that checks whether Unit tests appear to run from Ant build
      * scripts.
-     * 
-     * @since 1.6
      */
     protected static boolean runsFromAnt() {
         return "true".equals(System.getProperty("FROM_ANT"));
     }
     
     /*
-    /**********************************************************
+    /**********************************************************************
     /* Parser/generator construction
-    /**********************************************************
+    /**********************************************************************
      */
 
     protected JsonParser createParserUsingReader(String input)
@@ -313,9 +313,9 @@ public abstract class BaseTest
     }
 
     /*
-    /**********************************************************
+    /**********************************************************************
     /* Mapper construction
-    /**********************************************************
+    /**********************************************************************
      */
     
     protected static ObjectMapper newObjectMapper() {
@@ -323,9 +323,9 @@ public abstract class BaseTest
     }
 
     /*
-    /**********************************************************
+    /**********************************************************************
     /* Additional assertion methods
-    /**********************************************************
+    /**********************************************************************
      */
 
     protected void assertToken(JsonToken expToken, JsonToken actToken)
@@ -392,9 +392,9 @@ public abstract class BaseTest
     }
 
     /*
-    /**********************************************************
+    /**********************************************************************
     /* Mapper construction
-    /**********************************************************
+    /**********************************************************************
      */
 
     protected ObjectMapper newMapper() {
@@ -406,17 +406,17 @@ public abstract class BaseTest
     }
 
     protected ObjectMapper newMapper(JsonFactory f) {
-        return new ObjectMapper(f)
-                .registerModule(new GuavaModule())
-                .registerModule(new JodaModule())
-                .registerModule(new JsonOrgModule())
-                ;
+        return JsonMapper.builder(f)
+                .addModule(new GuavaModule())
+                .addModule(new JodaModule())
+                .addModule(new JsonOrgModule())
+                .build();
     }
 
     /*
-    /**********************************************************
+    /**********************************************************************
     /* And other helpers
-    /**********************************************************
+    /**********************************************************************
      */
 
     protected static String quote(String str) {
