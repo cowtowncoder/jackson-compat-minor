@@ -588,6 +588,19 @@ Jackson components
         <version>8.0.0</version>
     </dependency>
 
+    <!-- #3270 would require:
+    <dependency>
+        <groupId>com.vaadin</groupId>
+        <artifactId>vaadin-server</artifactId>
+        <version>7.7.14</version>
+    </dependency>
+    <dependency>
+        <groupId>com.vaadin</groupId>
+        <artifactId>vaadin-shared</artifactId>
+        <version>7.7.14</version>
+    </dependency>
+    -->
+
   </dependencies>
 
   <repositories>
