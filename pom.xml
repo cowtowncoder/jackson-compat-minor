@@ -67,12 +67,12 @@ Jackson components
            Instead will have to directly override
      -->
 <!-- uncomment to force different underlying Guava version
--->
      <dependency>
        <groupId>com.google.guava</groupId>
        <artifactId>guava</artifactId>
-       <version>19.0</version>
+       <version>31.1-jre</version>
      </dependency>
+-->
 
     <dependency>
       <groupId>com.fasterxml.jackson.core</groupId>
