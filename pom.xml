@@ -27,10 +27,6 @@ Jackson components
     <version.annotations>2.15.0-SNAPSHOT</version.annotations>
     <version.core>2.15.0-SNAPSHOT</version.core>
     <version.databind>2.15.0-SNAPSHOT</version.databind>
-<!--
-    <version.annotations>2.14.2</version.annotations>
-    <version.core>2.14.2</version.core>
-    <version.databind>${version.core}</version.databind>
 
     <!-- 14-May-2019, tatu: Versions 2.10.x, 2.9.x and 2.8.x work;
               2.7.x fails for Guava + Avro combination
