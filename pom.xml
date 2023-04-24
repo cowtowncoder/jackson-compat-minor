@@ -4,7 +4,7 @@
   <parent>
     <groupId>com.fasterxml.jackson</groupId>
     <artifactId>jackson-parent</artifactId>
-    <version>2.15-rc1</version>
+    <version>2.15</version>
   </parent>
   <groupId>com.fasterxml.jackson.util</groupId>
   <artifactId>jackson-compat-minor</artifactId>
@@ -24,9 +24,9 @@ Jackson components
   <properties>
     <!-- Basic idea: new(er) version of core components, older of dataformats
       -->
-    <version.annotations>2.15.0-rc1</version.annotations>
-    <version.core>2.15.0-rc1</version.core>
-    <version.databind>2.15.0-rc1</version.databind>
+    <version.annotations>2.15.0</version.annotations>
+    <version.core>2.15.0</version.core>
+    <version.databind>2.15.0</version.databind>
 
     <!-- 14-May-2019, tatu: Versions 2.10.x, 2.9.x and 2.8.x work;
               2.7.x fails for Guava + Avro combination
